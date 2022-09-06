@@ -21,6 +21,7 @@ public:
 };
 
 int main() {
-	
+	Point obj1(2, 5);
+	obj1.Print();
 
 }
