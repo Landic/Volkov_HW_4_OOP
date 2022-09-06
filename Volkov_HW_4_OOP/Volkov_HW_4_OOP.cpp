@@ -35,6 +35,11 @@ public:
 
 		age = value_age;
 	}
+
+	~Student() {
+		delete[] Firstname;
+		delete[] Lastname;
+	}
 };
 
 int main() {
