@@ -15,6 +15,13 @@ public:
 	}
 };
 
+class Student {
+	char* Firstname;
+	char* Lastname;
+	int age;
+public:
+};
+
 int main() {
 	
 
