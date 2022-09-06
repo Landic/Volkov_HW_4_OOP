@@ -20,6 +20,21 @@ class Student {
 	char* Lastname;
 	int age;
 public:
+	Student() {
+		Firstname = nullptr;
+		Lastname = nullptr;
+		age = 0;
+	}
+
+	Student(const char* value_firstname, const char* value_lastname, int value_age) {
+		Firstname = new char[strlen(value_firstname) + 1];
+		strcpy_s(Firstname, strlen(value_firstname) + 1, value_firstname);
+
+		Lastname = new char[strlen(value_lastname) + 1];
+		strcpy_s(Lastname, strlen(value_lastname) + 1, value_lastname);
+
+		age = value_age;
+	}
 };
 
 int main() {
